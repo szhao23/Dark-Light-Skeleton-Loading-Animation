@@ -1,6 +1,37 @@
 /* Import CSS Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-gradient: linear-gradient(90deg, #eee, #f9f9f9, #eee);
+  --color-background: #d9d9d9;
+  --color-card-background: #fff;
+  --color-header: #000;
+  --color-info: #363949;
+  --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* Dark Mode */
+.dark-mode {
+  --color-gradient: linear-gradient(
+    to right,
+    #656871 0%,
+    #888b94 20%,
+    #656871 40%,
+    #656871 100%
+  );
+  --color-background: #414247;
+  --color-card-background: #252525;
+  --color-header: #fff;
+  --color-info: #ccc;
+  --box-shadow: rgba(0, 0, 0, 0.35) 0px 5 15px;
+}
+
+.card img {
+  height: 80vw;
+  width: 100%;
 }
